@@ -1,0 +1,8 @@
+viacep:
+  url: https://viacep.com.br
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/hexagonal
+
