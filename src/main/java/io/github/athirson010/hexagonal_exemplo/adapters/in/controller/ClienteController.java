@@ -8,7 +8,6 @@ import io.github.athirson010.hexagonal_exemplo.application.ports.in.AtualizarCli
 import io.github.athirson010.hexagonal_exemplo.application.ports.in.BuscarClientePorIdInputPort;
 import io.github.athirson010.hexagonal_exemplo.application.ports.in.CadastrarClienteInputPort;
 import io.github.athirson010.hexagonal_exemplo.application.ports.in.DeletarClientePorIdInputPort;
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
