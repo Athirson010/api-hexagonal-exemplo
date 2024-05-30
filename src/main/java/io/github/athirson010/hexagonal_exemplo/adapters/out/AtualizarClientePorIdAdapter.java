@@ -4,7 +4,9 @@ import io.github.athirson010.hexagonal_exemplo.adapters.out.repository.ClienteRe
 import io.github.athirson010.hexagonal_exemplo.adapters.out.repository.mapper.ClienteEntityMapper;
 import io.github.athirson010.hexagonal_exemplo.application.core.domain.Cliente;
 import io.github.athirson010.hexagonal_exemplo.application.ports.out.AtualizarClientePorIdOutputPort;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AtualizarClientePorIdAdapter implements AtualizarClientePorIdOutputPort {
     private ClienteRepository clienteRepository;
     private ClienteEntityMapper clienteEntityMapper;
