@@ -14,6 +14,12 @@ public class BuscarClientePorIdAdapter implements BuscarClientePorIdOutputPort {
 
     private ClienteEntityMapper clienteEntityMapper;
 
+    public BuscarClientePorIdAdapter(ClienteRepository clienteRepository,
+                                     ClienteEntityMapper clienteEntityMapper) {
+        this.clienteRepository = clienteRepository;
+        this.clienteEntityMapper = clienteEntityMapper;
+    }
+
     @Override
     public Optional<Cliente> buscar(String id) {
         var clienteEntity = clienteRepository.findById(id);
